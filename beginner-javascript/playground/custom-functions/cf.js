@@ -1,11 +1,12 @@
-/* eslint-disable no-console */
-function calculateBill() {
-  console.log("Running Calculate Bill!!");
-  const total = 100 * 1.06625;
+function calculateBill(billAmount, taxRate) {
+  console.log(billAmount, taxRate);
+  console.log("Running Calculate Bill Wow!!!");
+  const total = billAmount * (1 + taxRate);
   return total;
 }
 
-const myTotal = calculateBill();
-console.log(`Your Total is $${myTotal}`);
+const myTotal = calculateBill(100, 0.06625);
+const myTotal2 = calculateBill(200, 0.15);
 
-console.log("Wow this stuff really works!");
+console.log(myTotal);
+console.log(myTotal2);
