@@ -16,3 +16,4 @@ function aIsForApple (fruit) {
 };
 
 console.log(fruit);
+console.log(aIsForApple("bananna"));
