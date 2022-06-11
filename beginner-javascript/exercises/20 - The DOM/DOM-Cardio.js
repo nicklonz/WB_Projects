@@ -8,19 +8,35 @@ div.classList.add('wrapper');
 document.body.appendChild(div);
 
 // make an unordered list
-
+const ul = `
+  <ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <li>four</li>
+    <li>cinco</li>
+  </ul>
+`;
 // add three list items with the words "one, two, three" in them
+  div.innerHTML = ul;
+  console.log(div);
 // put that list into the above wrapper
-
 // create an image
-
+const img = document.createElement('img')
 // set the source to an image
+img.src = 'https://picsum.photos/500';
 // set the width to 250
+img.width = 250;
+img.height = 250;
 // add a class of cute
+img.classList.add('cute');
 // add an alt of Cute Puppy
+img.alt = "Cute Puppy"
 // Append that image to the wrapper
+div.appendChild(img);
 
 // with HTML string, make a div, with two paragraphs inside of it
+
 // put this div before the unordered list from above
 
 // add a class to the second paragraph called warning
