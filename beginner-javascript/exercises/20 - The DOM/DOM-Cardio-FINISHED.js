@@ -46,7 +46,8 @@ myDiv.children[1].classList.add('warning');
 // remove the first paragraph
 myDiv.firstElementChild.remove();
 
-// create a function called generatePlayerCard that takes in three arguments: name, age, and height
+// create a function called generatePlayerCard that takes 
+//in three arguments: name, age, and height
 function generatePlayerCard(name, age, height) {
   const html = `
     <div class="playerCard">
