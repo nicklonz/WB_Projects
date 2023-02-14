@@ -65,20 +65,22 @@ dog = 'snickers';
 let somethingUndefined;
 const somethingNull = null;
 
+*/
+
 const cher = {
-  first: 'cher'
+  first: 'cherbear'
 };
 
 const teller = {
   first: 'Raymond',
-  last: 'Teller'
+  last: 'Chicken123'
 }
 
 teller.first = 'Teller';
-teller.last = null;
 
-*/
 
+
+/*
 let isDrawing = false;
 let age = 18;
 const ofAge = age > 19;
@@ -86,3 +88,4 @@ console.log(ofAge);
 
 age = 100;
 let age2 = 100;
+*/
