@@ -1,14 +1,18 @@
-console.log("It works Nick!!!");
-console.log("Wow NL !!!");
+console.log('It works Nick!!!');
+console.log('Wow NL !!!');
+console.log(doctorize2('NL'));
 
-console.log(doctorize2("NL"));
+// eslint-disable-next-line no-unused-vars
 const doctorize = function (firstName) {
   return `Dr. ${firstName}`;
 };
-function doctorize2 (firstName) {
+
+function doctorize2(firstName) {
   return `Dr. ${firstName}`;
+  // eslint-disable-next-line prettier/prettier
 };
 
+/*
 const fruit = ("apple")
 
 function aIsForApple (fruit) {
@@ -41,3 +45,4 @@ const myTotal2 = calculateBill(200, 0.15);
 
 console.log(myTotal);
 console.log(myTotal2);
+*/
