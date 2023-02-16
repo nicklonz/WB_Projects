@@ -57,3 +57,21 @@ async function fetchDadJoke() {
   console.log(joke);
   return joke;
 }
+
+console.group('Doing some stuff');
+function doALotOfStuff() {
+  console.group('Doing some stuff');
+  console.log('Im one');
+  console.warn('watch out!');
+  console.error('hey');
+  console.groupEnd('Doing some stuff');
+}
+
+people.forEach((person, index) => {
+  console.group(`${person.name}`);
+  console.log(person.country);
+  console.log(person.cool);
+  console.log('DONE!!');
+  console.groupEnd(`${person.name}`);
+  console.groupCollapsed(`${person.name}`);
+});
