@@ -1,6 +1,6 @@
 console.log('It works Nick!!!');
 console.log('Wow NL !!!');
-console.log(doctorize2('NL'));
+console.log(doctorize2('Nick L'));
 
 // eslint-disable-next-line no-unused-vars
 const doctorize = function (firstName) {
@@ -12,8 +12,23 @@ function doctorize2(firstName) {
   // eslint-disable-next-line prettier/prettier
 };
 
-/*
-const fruit = ("apple")
+// eslint-disable-next-line no-unused-var
+
+inchToCM(inches); {
+  const cm = inches * 2.54;
+  return cm;
+}
+
+function inchToCM(inches) {
+  return inches * 2.54;
+}
+
+// eslint-disable-next-line no-unused-vars
+function inchToCM10(inches) {
+  return inches * 2.54;
+}
+
+
 
 function aIsForApple (fruit) {
   return `The name of the fruit is ${fruit}!!!`;
@@ -45,4 +60,4 @@ const myTotal2 = calculateBill(200, 0.15);
 
 console.log(myTotal);
 console.log(myTotal2);
-*/
+
