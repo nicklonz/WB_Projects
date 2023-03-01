@@ -1,8 +1,8 @@
 // Make a div
-const div = document.createElement("div");
+const div = document.createElement('div');
 
 // add a class of wrapper to it
-div.classList.add("wrapper");
+div.classList.add('wrapper');
 
 // put it into the body
 document.body.appendChild(div);
@@ -22,16 +22,16 @@ div.innerHTML = ul;
 console.log(div);
 // put that list into the above wrapper
 // create an image
-const img = document.createElement("img");
+const img = document.createElement('img');
 // set the source to an image
-img.src = "https://picsum.photos/500";
+img.src = 'https://picsum.photos/500';
 // set the width to 250
 img.width = 250;
 img.height = 250;
 // add a class of cute
-img.classList.add("cute");
+img.classList.add('cute');
 // add an alt of Cute Puppy
-img.alt = "Cute Puppy";
+img.alt = 'Cute Puppy';
 // Append that image to the wrapper
 div.appendChild(img);
 
@@ -44,7 +44,7 @@ const myHTML = `
   </div>
   `;
 
-const ulElement = div.querySelector('ul');  
+const ulElement = div.querySelector('ul');
 console.log(ulElement);
 // put this div before the unordered list from above
 ulElement.insertAdjacentHTML('beforebegin', myHTML);
@@ -53,14 +53,15 @@ const myDiv = div.querySelector('.myDiv');
 myDiv.children[1].classList.add('warning');
 // remove the first paragraph
 myDiv.firstElementChild.remove();
-// create a function called generatePlayerCard that takes in 
-//three arguments: name, age, and height
+// create a function called generatePlayerCard that takes in
+// three arguments: name, age, and height
 function generatePlayerCard(name, age, height) {
   const html = `
     <div class="playerCard">
       <h2>${name} — ${age}</h2>
-      <p>Their Height is ${height} and ${age} years old. In Dog years this person would be ${age *
-    7}. That would be a tall dog ${name}!
+      <p>Their Height is ${height} and ${age} years old. In Dog years this person would be ${
+    age * 7
+  }. That would be a tall dog ${name}!
         <button class="delete" type="button">&times; Delete</button>
     </p>
 
@@ -100,4 +101,4 @@ function deleteCard(event) {
   buttonThatGotClicked.closest('.playerCard').remove();
 }
 // loop over them and attach a listener
-buttons.forEach(button => button.addEventListener('click', deleteCard));
+buttons.forEach((button) => button.addEventListener('click', deleteCard));
