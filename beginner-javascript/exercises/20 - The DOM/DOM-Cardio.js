@@ -15,6 +15,8 @@ const ul = `
     <li>three</li>
     <li>four</li>
     <li>cinco</li>
+    <li>six</li>
+    <li>seven</li>
   </ul>
 `;
 // add three list items with the words "one, two, three" in them
